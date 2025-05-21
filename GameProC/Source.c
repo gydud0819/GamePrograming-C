@@ -1,51 +1,54 @@
 /*
-* 작성일	: 2025-05-20
-* 작성자	: 박효영 
-* 주제	: 
+* 작성일	: 2025-05-21
+* 작성자	: 박효영
+* 주제	: 비트와 연산
 */
 
-#pragma region 변수
-/*
-* main 함수는 프로그램의 진입점 역할을 하는 함수
-* 데이터를 저장할 수 있는 메모리 공간을 생성하는 것이다. 
-*/
+#include <stdio.h>
+
+#pragma region (10)진수를 (2)진수로 변환하는 과정
+//10진수를 1이 될 때까지 계속 2로 나누어 준 다음
+//나눈 위치의 나머지 값을 아래에서 위 순서로 정렬한다.
 #pragma endregion
 
-#pragma region 자료형
-/*
-* 데이터를 저장하기 위해 데이터의 형태를 정해주는 것이다.
-* 각각의 자료형마다 크기가 정해져 있다.
-* 바이트(byte) 단위로 구성되어 있다.  1byte = 8bit
-* 
-* 자료형에 따라 저장할 수 있는 종류와 범위가 결정된다. 
-* 자료형 변수의 이름 = 데이터; 
-* 
-* 정수 - int				ex. 100
-* 실수 - double, float	ex. 23.5
-* 문자 - char			ex. 'S'
-* 문자열 - string?		ex. "Vinila"
-* 
-* char a = 'A';
-* int a = 100;
-* float c = 23.5f;
-* 
-* 변수의 메모리 공간은 프로그램이 실행될 때 마다 변경된다. 
-*/
+#pragma region (2)진수를 (10)진수로 변환하는 과정
+	// 1 byte에 2진수로 저장된 값을 2의 제곱으로 나타낸다.
 
+	// 각각의 비트에 1이 있다면 1과 2의 제곱 위치를 계산한 다음
 #pragma endregion
 
-/*
-* 개발에서 중요한 것은 디버깅이다. 
-*/
-
-#include <stdio.h>	// standard input&output (표준 입출력)
-
-void main()	
+void main()
 {
-	printf("hi\n");
+#pragma region 비트
+	//데이터를 나타내는 최소 단위이다.
+	//0과 1로 구성되어 있다.
+	
+	//메모리는 비트 단위로 데이터를 저장할 수 있고,
+	//1개의 비트에는 0 또는 1의 값만 저장할 수 있다.
+#pragma endregion
 
-	char a = 'A';
-	int b = 100;
-	float c = 23.5f;
+#pragma region 비트 연산자
+	// 비트 단위로 논리 연산을 수행하기 위해 사용하는 연산자
+#pragma endregion
+
+#pragma region AND 연산자
+	// 2개의 피연산자가 모두 1이면 1을 반환하는 연산자이다.
+	//int x = 10;	// 0000 1100
+	//int y = 6;	// 0000 0110
+
+	//printf("두 변수를 AND 연산한 값 : %d\n", x & y);
+
+#pragma region OR 연산자
+	// 2개의 피연산자 중에 하나라도 1이 있다면 1을 반환하는 연산자이다.
+	int a = 8;	// 0000 1000	
+	int b = 12;	// 0000 1100 
+
+	printf("a|b의 값: %d\n", a | b);
+#pragma endregion
+
+#pragma endregion
+
+
 
 }
+
