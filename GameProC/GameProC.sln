@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GameProC", "GameProC.vcxpro
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class1th (Variable & Constant)", "..\Class1th (Variable & Constant)\Class1th (Variable & Constant).vcxproj", "{40A2F98C-0249-4CF3-99FA-06690E759BE3}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class2th - Bit", "..\Class2th - Bit\Class2th - Bit.vcxproj", "{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{40A2F98C-0249-4CF3-99FA-06690E759BE3}.Release|x64.Build.0 = Release|x64
 		{40A2F98C-0249-4CF3-99FA-06690E759BE3}.Release|x86.ActiveCfg = Release|Win32
 		{40A2F98C-0249-4CF3-99FA-06690E759BE3}.Release|x86.Build.0 = Release|Win32
+		{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}.Debug|x64.ActiveCfg = Debug|x64
+		{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}.Debug|x64.Build.0 = Debug|x64
+		{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}.Debug|x86.ActiveCfg = Debug|Win32
+		{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}.Debug|x86.Build.0 = Debug|Win32
+		{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}.Release|x64.ActiveCfg = Release|x64
+		{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}.Release|x64.Build.0 = Release|x64
+		{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}.Release|x86.ActiveCfg = Release|Win32
+		{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
