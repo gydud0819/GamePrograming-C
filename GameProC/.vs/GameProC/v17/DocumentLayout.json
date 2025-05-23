@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4CD72DCF-05BD-47ED-A250-6B23C2DB8A35}|..\\Class2th - Bit\\Class2th - Bit.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class2th - Bit\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{34FECD72-8A76-43E2-9CBD-2F3F4EC12E51}|..\\Class3th (iteration Staterment)\\Class3th (iteration Staterment).vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\Class3th (iteration Staterment)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,36 +17,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class2th - Bit\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class2th - Bit\\Source.c",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class2th - Bit\\Source.c",
-              "RelativeToolTip": "..\\Class2th - Bit\\Source.c",
-              "ViewState": "AgIAAHUAAAAAAAAAAAAAAI4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-22T14:22:52.695Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
-              "RelativeDocumentMoniker": "Source.c",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
-              "RelativeToolTip": "Source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\Class3th (iteration Staterment)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class3th (iteration Staterment)\\Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\Class3th (iteration Staterment)\\Source.c",
+              "RelativeToolTip": "..\\Class3th (iteration Staterment)\\Source.c",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-20T05:25:03.243Z",
+              "WhenOpened": "2025-05-23T05:37:52.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
+              "RelativeDocumentMoniker": "Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
+              "RelativeToolTip": "Source.c",
+              "ViewState": "AgIAABUAAAAAAAAAAAAkwEkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-23T03:13:39.048Z",
               "EditorCaption": ""
             }
           ]
