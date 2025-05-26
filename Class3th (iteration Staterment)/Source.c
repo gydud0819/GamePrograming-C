@@ -48,33 +48,33 @@ void main()
 	// 초기식을 연산하여 조건식의 결과에 따라 특정한 수만큼 반복하는 반복문이다.
 	// 반복문이 동작하는 순서는 초기화 -> 조건 검사 -> 실행 -> 증감 구조 로 동작한다.
 
-	
-	 for (int i = 1; i < 10; i++)
-	 {
-	 	for (int j = 1; j < 10; j++)
-	 	{
-	 		printf(" %d * %d = %d\n", i, j, i*j);
-	 	}
-	 		printf("===============\n");
-	 }
 
-	/*for (int i = 0; i < 10; i++)
-	{
-		printf("*\n", i);
+	/* for (int i = 1; i < 10; i++)
+	 {
 		for (int j = 1; j < 10; j++)
 		{
-			printf("*\n", j, i);
+			printf(" %d * %d = %d\n", i, j, i*j);
 		}
-	}*/
+			printf("===============\n");
+	 }*/
 
-	//printf("==============================\n");
+	 /*for (int i = 0; i < 10; i++)
+	 {
+		 printf("*\n", i);
+		 for (int j = 1; j < 10; j++)
+		 {
+			 printf("*\n", j, i);
+		 }
+	 }*/
 
-	//// 역 출력
-	//for (int i = 10; i >= 0; i--)
-	//{
-	//	printf("%d\n", i);
+	 //printf("==============================\n");
 
-	//}
+	 //// 역 출력
+	 //for (int i = 10; i >= 0; i--)
+	 //{
+	 //	printf("%d\n", i);
+
+	 //}
 
 #pragma endregion
 
@@ -128,6 +128,24 @@ void main()
 
 #pragma endregion
 
+#pragma region Continue문
+	// 해당 조건문만 실행하지 않고 반복문은 이어서 실행하는 제어문이다.
+
+	// continue : 건너뛰다.
+	// 
+
+	// for (int i = 1; i <= 10; i++)
+	// {
+	// 	if (i % 3 == 0)
+	// 	{
+	// 		continue;
+	// 	
+	// 	}
+	// 		printf("%d\n", i);
+	// }
+		
+
+#pragma endregion
 
 
 #pragma endregion

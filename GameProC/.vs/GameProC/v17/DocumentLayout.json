@@ -8,6 +8,9 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{34FECD72-8A76-43E2-9CBD-2F3F4EC12E51}|..\\Class3th (iteration Staterment)\\Class3th (iteration Staterment).vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\Class3th (iteration Staterment)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A64C1568-C01A-4ECD-9746-B34C67B45454}|..\\Class4th (Conditional Statement)\\Class4th (Conditional Statement).vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\Class4th (Conditional Statement)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,8 +20,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\Class4th (Conditional Statement)\\Source.c",
+              "RelativeDocumentMoniker": "..\\Class4th (Conditional Statement)\\Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\Class4th (Conditional Statement)\\Source.c",
+              "RelativeToolTip": "..\\Class4th (Conditional Statement)\\Source.c",
+              "ViewState": "AgIAAN4AAAAAAAAAAAAuwPQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-05-26T06:10:11.405Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -27,7 +43,7 @@
               "RelativeDocumentMoniker": "..\\Class3th (iteration Staterment)\\Source.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\Class3th (iteration Staterment)\\Source.c",
               "RelativeToolTip": "..\\Class3th (iteration Staterment)\\Source.c",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAADoAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAwwJUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-23T05:37:52.922Z",
               "EditorCaption": ""
@@ -40,7 +56,7 @@
               "RelativeDocumentMoniker": "Source.c",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AgIAABUAAAAAAAAAAAAkwEkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-23T03:13:39.048Z",
               "EditorCaption": ""
