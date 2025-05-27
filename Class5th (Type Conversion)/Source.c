@@ -43,15 +43,25 @@ void main()
 #pragma endregion
 
 #pragma region 정수의 승격
-	// char, short와 같은 크기가 작은 정수형 자료형을 int형으로 변환하는 것을 의미한다.
-	// 자동으로 변환되고....
+	// char, short와 같은 크기가 작은 정수형 자료형은 연산할 때 자동으로 int형으로 변환된다.
 
-	// char a = 3;		// 1byte	
-	// short b = 5;	// 2byte
-	// 
-	// int c = a + b;
-	// printf("정수의 승격시 변환되는 바이트 크기 : %ubyte\n", sizeof(c));
-	// printf("정수의 승격시 변환되는 값 : %d\n",c);
+	 char a = 3;		// 1byte	정수형 범위: -128 ~ 127
+	 short b = 5;		// 2byte	정수형, 범위: -32,768 ~ 32,767
+	 
+	 int c = a + b;		// 정수 승격 후 자동으로 연산한다.
+	 printf("정수의 승격시 변환되는 바이트 크기 : %ubyte\n", sizeof(c));
+	 printf("정수의 승격시 변환되는 값 : %d\n", c);
+
+	 printf("====================================================\n");
+
+	// unsigned char, unsigned short도 예외없이 적용된다.
+	 unsigned char a1 = 20;		// 1byte 양수만 취급(0 ~ 255)
+	 unsigned short b2 = 40;	// 2byte 양수만 취급(0 ~ 65535)
+
+	 int c2 = a1 + b2;			// 정수 승격 후 자동으로 연산한다.
+	 printf("unsigned 자료형의 정수의 승격시 변환되는 바이트 크기 : %ubyte\n", sizeof(c2));
+	 printf("unsigned 자료형의 정수의 승격시 변환되는 값 : %d\n", c2);
+
 #pragma endregion
 
 

@@ -115,15 +115,15 @@ void main()
 	// 조건문에 논리 표현식을 평가하는 도중 결과가 확정이 났다면 그 이후의 평가를 생략한다. Short ?
 
 	// int ball = 4;
-	// int stk = 1;
+	// int hit_by_pitch = 1;
 	// 
-	// if (ball >= 4 || stk > 3)	// 조건이 애매한데 ㅇㅅㅇ 
+	// if (ball >= 4 || hit_by_pitch == 1)	// 조건이 애매한데 ㅇㅅㅇ 
 	// {
-	// 	printf("볼넷으로 출루한다.\n");
+	// 	printf("1루 베이스로 출루한다.\n");
 	// }
 	// else
 	// {
-	// 	printf("1아웃\n");
+	// 	printf("타석에 남아 있는다.\n");
 	// }
 
 

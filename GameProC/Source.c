@@ -40,11 +40,11 @@ void main()
 	// 포인터 변수에 변수의 시작 주소를 저장하게 되면 해당 변수의 시작 주소를 가리키게 된다. 
 	// 작성 방법 : * 변수
 
-	int a = 1;
-	int* ip = &a;
-
-	printf("a의 주소값: %p\n", &a);
-	printf("ip의 값: %p\n", ip); // 담고 잇다? 가리킨다?
+	//int a = 1;
+	//int* ip = &a;
+	//
+	//printf("a의 주소값: %p\n", &a);
+	//printf("ip의 값: %p\n", ip); // 담고 잇다? 가리킨다?
 #pragma endregion
 
 }
