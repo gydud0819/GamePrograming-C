@@ -70,7 +70,7 @@ void main()
 
 #pragma endregion
 
-#pragma region 상수 지시 포인터 이게 몬데요..
+#pragma region 상수 지시 포인터
 	// 포인터가 가리키는 주소에 저장되어 있는 값을 변경할 수 없도록 지정되어 있는 포인터이다.
 	// 자료형이 상수화 되어잇다?
 	// 저래서 내가 못알아들엇구나;;;;;;;;;;;;; 
@@ -121,7 +121,7 @@ void main()
 	// 범용 포인터는 메모리 주소에 접근해서 값을 변경할 수 없으므로 범용 포인터가 가리키는 변수의 자료형으로 변환해줘야 한다.
 	
 	vpointer = &a;
-	*(char*)vpointer = 'B';
+	*(char*)vpointer = 'B';	// *(char*)vpointer 처럼 *(자료형*)변수명을 써줘야 값을 바꿀 수 있다.
 	printf("주소값 : %p\n", &vpointer);
 	printf("값 : %c\n", a);
 
@@ -139,7 +139,7 @@ void main()
 
 
 
-	// 범용 포인터는 메모리 주소에 접근해서 
+	// 범용 포인터는 메모리 주소에 접근해서 접근해서 멀하나용
 
 #pragma endregion
 
