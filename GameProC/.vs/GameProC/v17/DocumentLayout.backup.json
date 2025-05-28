@@ -1,12 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3FFD0387-7930-49ED-B8EE-804B8D51BA45}|..\\Class5th (Type Conversion)\\Class5th (Type Conversion).vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class5th (Type Conversion)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A64C1568-C01A-4ECD-9746-B34C67B45454}|..\\Class4th (Conditional Statement)\\Class4th (Conditional Statement).vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class4th (Conditional Statement)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -16,36 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class4th (Conditional Statement)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class4th (Conditional Statement)\\Source.c",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class4th (Conditional Statement)\\Source.c",
-              "RelativeToolTip": "..\\Class4th (Conditional Statement)\\Source.c",
-              "ViewState": "AgIAAJQAAAAAAAAAAAAAAJ0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-27T14:42:56.734Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class5th (Type Conversion)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class5th (Type Conversion)\\Source.c",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class5th (Type Conversion)\\Source.c",
-              "RelativeToolTip": "..\\Class5th (Type Conversion)\\Source.c",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
+              "RelativeDocumentMoniker": "Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
+              "RelativeToolTip": "Source.c",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAIkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-27T12:59:11.063Z",
+              "WhenOpened": "2025-05-28T03:39:55.843Z",
               "EditorCaption": ""
             }
           ]
