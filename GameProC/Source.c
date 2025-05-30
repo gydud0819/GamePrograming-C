@@ -1,117 +1,118 @@
 #include <stdio.h>
 
+#pragma region 함수 예시 코드
+
+void Process()
+{
+	printf("Process..\n");
+}
+
+void Add(int a, int b)		// 더하기
+{
+	printf("덧셈 : %d\n\n", a + b);	
+	//return a + b;
+}
+
+void Minus(int a, int b)	// 빼기
+{
+	printf("뺄셈 : %d\n\n", a - b);
+	//return a - b;
+}
+
+void Times(int a, int b)	// 곱하기
+{
+	printf("곱셈 : %d\n\n", a * b);
+	//return a * b;
+}
+
+void Dvided(int a, int b)	// 나누기
+{
+	printf("나눗셈 : %d\n\n", a / b);
+	//return a / b;
+}
+
+void Stats(int health, const char* name)	// 후에 클래스나 구조체를 매개 인자로 받아오고 자주 사용함.
+{
+	printf("체력 : %d\n", health);
+	printf("이름 : %s\n", name);
+}   // 매개 변수 넣어서 쓰는 함수
+
+void Swap(int left, int right)	// Call by Value
+{
+	// 바뀌면 안된다고? 여따가 x y를 출력하라고?
+
+	//int temp = left;
+	//left = right;
+	//right = temp;
+	////printf("temp 값 : %d\n", temp);
+	//printf("left = %d\n", left);
+	//printf("right = %d\n", right);
+}
+
+void Swap2(int* x, int* y)	// Call by Reference
+{
+	int temp = *x;
+	*x = *y;
+	*y = temp;
+	printf("x  = %d\n", *x);
+	printf("y  = %d\n", *y);
+}
+#pragma endregion
+
 void main()
 {
-#pragma region 배열(array)
-	// 같은 자료형의 변수들로 이루어진 유한 집합이다. 
-	// 배열의 경우 첫 번쨰 원소는 0부터 시작한다.
-	// 배열은 원하는 원소에 원하는 값을 저장할 수 있고, 배열의 크기는 컴파일이 되는 시점부터 고정된 메모리 공간을 가진다.
-	// 배열의 크기는 생략할 수 있으며 초기화 목록에서 설정한 요소에 따라 크기가 결정된다. 
+#pragma region 함수(Function)
+	// 하나의 특별한 목적의 작업을 수행하기 위해 독립적으로 설계된 코드의 집합이다.
+	// 함수는 프로그램이 실행 중일때 함수 호출 위치에서 해당 함수로 이동시킨 뒤 작업을 수행하고
+	// 다시 원래 위치로 돌아오는 구조이다.
+	//Process();
+	//printf("=========\n");
+#pragma region 매개 변수
+	// 함수의 정의에서 전달받은 인수를 함수 내부로 전달하기 위해 사용하는 변수이다.
+	// 매개 변수는 함수 내부에서만 연산이 이루어지고 여러 개의 매개 변수를 생성할 수 있다.
+	// 문자열은 데이터 영역에 읽기 전용으로 저장된다? 쓰인다? 가리킨다?
+	// 함수 이름 누르고 F12 누르면 함수 내용이 적힌 곳으로 바로 갈 수 있다. 
 
-	/*int array[5] = { 1,2,3,4,5 };
-	for (int i = 0; i < 5; i++)
-	{
-		printf("% ", array[i]);
-	}*/
+	//Stats(5, "가스트");
+	//Stats(20, "스켈레톤");
+	//Stats(20, "좀비");
 
-	//int array2[5];
-	//for (int i = 0; i < 5; i++)
-	//{
-	//	scanf_s("%d", &array2[i]);	
-	//}
-	//
-	//printf("=================================\n");
-	//
-	//for (int i = 0; i < 5; i++)
-	//{
-	//	printf("%d ", array2[i]);
-	//}
-
-	//printf("=================================\n");
-
-	// 이렇게도 할 수 있음 
-	//int array3[5];
-	//
-	//// 배열 크기 구하기?
-	//int size = sizeof(array3) / sizeof(int);	// 자료형으로 나눠주면 된대. 집가서 다시해
-	//
-	//for (int i = 0; i < size; i++)
-	//{
-	//	array3[i] = (i + 1) * 10;
-	//	printf("array3[%d] = %d\n", i, array3[i]);
-	//}
-
-	//int list[5] = { 1,2,3,4,5 };
-	//
-	//int* ip = &list;
-	//*ip = 99; 
-	//
-	//printf("%p\n", list);	//
-	//printf("%d\n", *ip);		 
-	//
-	//ip++;
-	//
-	//printf("%p\n", ip);	
-	//printf("%p\n", &list[1]);
-
-	//float container[] = { 11.2f, 12.4f, 15.6f, 23.5 };
-	//printf("%p\n", &container);
-
+	//Add(3, 5);
+	//Minus(6, 8);
+	//Times(7, 8);
+	//Dvided(9, 4);
 #pragma endregion
-
-#pragma region 문자열
-	// 연속적인 메모리 공간에 저장된 문자 변수의 집합이다.
-	// 문자열의 경우 포인터를 이용하여 문자열 상수를 가리키도록 할 수 있다.
-	// 문자열 상수는 데이터 영역에 읽기 전용 공간에 저장되기에 문자열의 값을 변경할 수 없다. 
-	// 문자열은 포인터와 배열 2가지 방법으로 표현할 수 있다.
-	// 문자열은 공백도 같이 메모리 공간에 포함하여 크기가 결정되고 마지막에 문자열의 끝을 알려주는 제어 문자(NULL)이 추가된다. 
-	// 제어문자 표시 방법 : '\0'
-	// 문자열을 저장하게 되면 맨 마지막에 무효의 문자까지 메모리 공간에 저장된다. 
-
-	// 포인터로 저장하는 방법
-	//const char* word = "Home";
-	//printf("word 문자열 : %s\n", word);
-	//printf("word 주소 : %p\n", &word);
-	//
-	//
-	//word = "MineCra\0ft";
-	//printf("word 문자열 : %s\n", word);
-
-	// 배열로 저장하는 방법 (배열은 포인터 상수이다.)
-	//char name[] = "Chloe";
-	//printf("%s\n", name);
-	////printf("%p\n", &name);
-	//
-	//name[0] = 'B';
-	//printf("%s\n", name);
-
-	//name = "School"; // 사용할 수 없는 이유 : 
 	
-// 아스키 코드 vs 유니 코드 비교해서 실습 해보기 
-#pragma region ASCII(아스키 코드)
-	// 영문 알파벳을 사용하는 문자 인코딩이다.
-	// 영문 알파벳을 기반으로 하기 때문에 아스키 코드로 표현할 수 있는 문자가 한정적이다.
-	// 7비트로 영문 알파벳, 숫자, 일부 특수문자, 제어문자를 포함해 128개를 표현한다.
-	
-	// ex)
-	char a = 'B';
-	printf("ASCII 숫자 : %d\n", a);	// 출력값 : 66 (ASCII 코드값)
-	printf("ASCII 문자 : %c\n\n", a);	// 출력값 : B (ASCII 코드값)
+#pragma region 인수
+	// 함수가 호출될 때 매개 변수에 실제로 전달되는 값이다.
+	// 인수의 경우 값을 전달하는 인수와 값을 전달받는 매개 변수의 자료형이 서로 일치해야한다.
+
+	int x = 10;
+	int y = 20;
+	printf("x = %d\n", x);
+	printf("y = %d\n\n", y);
+	//
+	//printf("swap했을 때\n\n");
+	//printf("=================\n");
+
+	//int temp = x;
+	//x = y;
+	//y = temp;
+	//printf("temp 값 : %d\n", temp);
+
+	//Swap(x,y);	// Call by Value
+	Swap2(&x, &y);	// Call by Reference
+
+	printf("=================\n");
+
+	//printf("x = %d\n", x);
+	//printf("y = %d\n", y);
+
+	//printf("=================\n");
 
 
 #pragma endregion
-
-#pragma region 유니 코드
-	// 전 세계의 모든 문자를 포함하는 범용 문자 인코딩이다.
-	// 각 문자별로 고유 코드 포인트를 부여하고 기본적으로 16비트(65,536자)를 지원한다. 
-	// 보충판을 통해 16비트 그 이상 수십만 개의 문자까지도 표현할 수 있다 
-	// 거의 모든 문자를 지원하기 때문에 국제적으로 널리 사용된다. (웹, 모바일 등)
-	// 인코딩 방식이 다양하고 UTF-8은 0~127 범위에서 아스키와 동일한 방식으로 인코딩한다.
 	
-	// ex)
-	printf("유니코드 : \ud558");
-
-#pragma endregion
 
 	
 #pragma endregion
