@@ -1,13 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\",
+  "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AFBB1F48-E713-4265-877C-5CEAA1F7AD0D}|..\\Class7th (Arrangement)\\Class7th (Arrangement).vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class7th (Arrangement)\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|solutionrelative:Source.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{0B6DAD69-A862-4BC5-A566-148BD597F0FE}|GameProC.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.43.34808\\INCLUDE\\STDARG.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,33 +17,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class7th (Arrangement)\\Source.c",
-              "RelativeDocumentMoniker": "..\\Class7th (Arrangement)\\Source.c",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\Class7th (Arrangement)\\Source.c",
-              "RelativeToolTip": "..\\Class7th (Arrangement)\\Source.c",
-              "ViewState": "AgIAAIUAAAAAAAAAAAAgwJUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2025-05-31T11:43:37.004Z",
+              "DocumentIndex": 1,
+              "Title": "stdarg.h",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\stdarg.h",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\stdarg.h",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\stdarg.h",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.43.34808\\include\\stdarg.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-06-02T05:24:49.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Source.c",
-              "DocumentMoniker": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
               "RelativeDocumentMoniker": "Source.c",
-              "ToolTip": "C:\\Users\\DPC\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\GamePrograming-C\\GameProC\\Source.c",
               "RelativeToolTip": "Source.c",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2025-05-31T11:43:29.721Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6d4078d1-5951-4ed1-ac0e-0a8099c1cce5}"
             },
             {
               "$type": "Bookmark",
