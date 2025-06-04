@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <math.h>
+#include <stdbool.h>
+#include <string.h>
 
 struct Card
 {
@@ -14,12 +16,21 @@ struct SP
 	double b;
 };
 
-typedef struct Node
+struct Node
 {
 	int data;
 	struct Node* next;
 	struct Node* currentNode;
-}Node;
+};
+
+typedef struct
+{
+	char name[20];
+	char position[20];
+	int number;
+
+
+}Baseball, Player;
 
 int main()
 {
@@ -118,33 +129,48 @@ int main()
 #pragma region 자기 참조 구조체
 	// 자기 자신과 같은 타입의 포인터를 멤버로 포함하고 있는 구조체이다.
 
-	struct Node node1;
-	struct Node node2;
-	struct Node node3;
-
-	node1.data = 10;
-	node2.data = 20;
-	node3.data = 30;
-	
-	node1.next = &node2;
-	node2.next = &node3;
-	node3.next = NULL;
-	
-	struct Node* currentNode;
-	currentNode = node1.data;
-	printf("%d\n", currentNode);	// node1
-
-	currentNode = node2.data;
-	printf("%d\n", currentNode);	// node2
-
-	currentNode = node3.data;
-	printf("%d\n", currentNode);	// node3
-
-	currentNode = node3.next;
-	printf("%d\n", currentNode);
+	//struct Node node1;
+	//struct Node node2;
+	//struct Node node3;
+	//
+	//node1.data = 10;
+	//node2.data = 20;
+	//node3.data = 30;
+	//
+	//node1.next = &node2;
+	//node2.next = &node3;
+	//node3.next = NULL;
+	//
+	//struct Node* currentNode = &node1;	// 중단점 찍어서 확인을 하면 어떻게 들어가는지 쉽게 알 수 있다.
+	//
+	//while (currentNode != NULL)
+	//{
+	//	printf("%d\n", currentNode->data);
+	//	currentNode = currentNode->next;
+	//}
 
 #pragma region typedef
-	// 
+	/*
+	* 자료형에 별명을 붙이는 키워드로 원하는 이름으로 커스텀해서 사용할 수 있다.
+	* 복잡한 자료형을 간략히 표현하기 위해 사용한다.
+	* 구조체를 선언할 때 typedef를 사용하면 struct를 쓰지않고 선언할 수 있다.
+	* 사용 예시: 
+	* typedef struct 
+	* { 
+	* 
+	* } 커스텀 하고 싶은 구조체 변수;
+	*/
+
+	Player player;	// typedef를 선언해서 사용한 구조체
+	
+	strcpy_s(player.name, sizeof(player.name), "이호준");
+	strcpy_s(player.position, sizeof(player.position), "감독");
+	player.number = 26;
+	
+	printf("이름 : %s\n", player.name);
+	printf("포지션 : %s\n", player.position);
+	printf("등번호 : %d\n", player.number);
+	
 #pragma endregion
 
 	
