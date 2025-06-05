@@ -1,179 +1,158 @@
 #include <stdio.h>
-#include <math.h>
-#include <stdbool.h>
-#include <string.h>
+#include <stdlib.h>
+#include <time.h>
+#include <Windows.h>
 
-struct Card
+#pragma region 함수 예제
+void Shuffle(int array[], int size)
 {
-	char grade;		// 1
-	int health;		// 4
-	double attack;	// 8
+
+	for (int i = 0; i < size; i++)
+	{
+		int  a = rand() % size;
+
+		int temp = array[a];
+		array[a] = array[i];
+		array[i] = temp;
+	}
+}
+
+void PlayerHp(int hp)
+{
+	printf("Hp : ");
+
+	for (int i = 0; i < hp; i++)
+	{
+		printf("♥");
+	}
+	printf("\n\n");
+}
+
+void GotoXY(int x, int y)
+{
+	COORD pos = { x,y };
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+}
+#pragma endregion
+
+enum 오방신
+{
+	청룡,
+	백호,
+	현무,
+	주작,
+	황룡
 };
 
-struct SP
+enum BASEBALL_POSITION
 {
-	double a;
-	double b;
+	Pitcher,
+	Catcher,
+	InField,
+	OutField,
+	Coatch
 };
-
-struct Node
-{
-	int data;
-	struct Node* next;
-	struct Node* currentNode;
-};
-
-typedef struct
-{
-	char name[20];
-	char position[20];
-	int number;
-
-
-}Baseball, Player;
 
 int main()
 {
-#pragma region 구조체
-	// 여러개의 변수를 하나의 집합으로 구조화 한다음 하나의 객체를 생성하는 것이다.
-	// 구조체를 선언하기 전에 구조체는 메모리 공간이 생성되지 않기에 구조체 내부에 있는 데이터를 초기화 할 수 없다.
-	// 선언방법 : struct 구조체 이름 { };
-	// 클래스와는 다르게 C에서는 struct를 붙여줘야한다.
+#pragma region 의사 난수
+	// rand() : 0~32767 사이의 난수의 값을 반환하는 함수이다.
+	// time(NULL) : 1970년 1월 1일  (00 : 00 : 00) UTC 이후에 지난 초(Second)를 반환하는 함수이다.
+	// srand(seed) : 난수 생성기의 시드를 설정하는 함수이다.
 
-	// 구조체의 각 멤버는 구조체 선언에서 나타는 순서대로 초기화해야 하고 순서는 왼쪽에서 오른쪽으로 이어진다.
-	//struct Card card = { 'B', 20, 33.2 };	
+	//int max = 10;
 	//
-	//printf("등급 : %c\n", card.grade);
-	//printf("체력 : %d\n", card.health);
-	//printf("공격력 : %1f\n\n", card.attack);
+	//srand(time(NULL));
 	//
-	//card.grade = 'S';
-	//card.health = 10;
-	//card.attack = 11.3f;
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	printf("%d ", rand() % max + 1);	// 1부터 10까지 출력
 	//
-	//printf("등급 : %c\n", card.grade);
-	//printf("체력 : %d\n", card.health);
-	//printf("공격력 : %1f\n\n", card.attack);
-	//
-	//// 구조체 포인터로 접근했을 때
-	//struct Card* cptr = &card;
-	//cptr->grade = 'SS';
-	//cptr->health = 30;
-	//cptr->attack = 5.7f;
-	//
-	//printf("등급 : %c\n", cptr->grade);
-	//printf("체력 : %d\n", cptr->health);
-	//printf("공격력 : %1f\n", cptr->attack);
+	//}
+
+
 
 #pragma endregion
 
-#pragma region 바이트 패딩
-	// 멤버 변수를 메모리에서 CPU로 읽을 때 한 번에 읽을 수 있도록 컴파일러가 레지스터의 블록에 맞춰 바이트를 패딩해주는 최적화 작업이다.
-	// 구조체 크기의 경우 멤버 변수의 순서에 따라 메모리 크기가 다르게 설정될 수 있고 구조체 크기를 결정하는 형태는 기본 자료형으로만 구성된다.
-	// 구조체 안에 선언된 변수가 멤버 변수에 속한다.
-	// 가장 큰 자료형의 크기에 맞추나? 맞추넹 
-	// 구조체의 크기는 구조체를 구성하는 멤버 변수 중에서 크기가 가장 큰 자료형의 배수가 되도록 설정한다. 
-	// 가장 큰 자료형을 제일 밑에 배정하면 바이트 패딩을 줄일 수 있다. 
-
-	//printf("Card 구조체의 크기 : %u byte\n", sizeof(struct Card));
+#pragma region 셔플 함수
+	//srand(time(NULL));
+	//
+	//int list[10] = { 1,2,3,4,5,6,7,8,9,10 };
+	//int size = sizeof(list) / sizeof(int);
+	//
+	//Shuffle(list, size);
+	//
+	//for (int i = 0; i < size; i++)
+	//{
+	//	printf("%d\n", list[i]);
+	//}
 #pragma endregion
 
-#pragma region 두 점 사이의 거리
-	// a^2 + b^2 = c^2
+#pragma region Up&Down Game
 
-	//printf("sqrt(100) : %1f\n",sqrt(100));	// 루트
-	//printf("pow(2,3) : %1f\n", pow(2, 3));	// 제곱
-	//
-	//struct SP sp1 = { 1,5 }; // 플레이어 좌표
-	//struct SP sp2 = { 5,8 }; // 몬스터 좌표
-	//
-	//sp1.a = 4;
-	//sp2.a = 3;
-	//sp1.b = 3;
-	//sp2.b = 7;
-	//
-	//double d2 = sqrt(pow(sp1.a - sp2.a, 2) + pow(sp1.b - sp2.b, 2));	// 내가 표현하려고햇던거 2를 안넣엇네 ㅅㅂ 
-	//
-	//printf("d2 : %1f\n", d2);
-	//
-	//if (d2 >= 3.0)
-	//{
-	//	printf("공격가능\n");
-	//}
-	//else
-	//{
-	//	printf("공격불가\n");
-	//}
+	srand(time(NULL));
+
+	int randNum = rand() % 50 + 1;
+
+	int me = 0;
+
+	int try = 5;
+	int hp = 0;
 
 	
-	//double x = sp1.a - sp2.a;
-	//double y = sp2.b - sp2.b;
-	//
-	//
-	//double d = sqrt(pow(x, 2) + pow(y, 2));	// 아니 이해가 안가는데? 
-	//
-	//if (d >= 3.0)
-	//{
-	//	printf("공격가능\n");
-	//
-	//}
-	//else
-	//{
-	//	printf("공격불가\n");
-	//}
+
+	printf("랜덤 숫자 맞추기\n");
+	printf("1~50 사이\n");
 
 
-	
+	// 5번 다 쓸때까지 돌아야하니까 while을 쓰는게 맞는거 같긴한데 손코딩 대신 할 수 있는 대안 1. 메모장 2. 노션 3. pureRef? 4. 그림판은 사용할줄 모름 
+
+	while (try > hp)
+	{
+		//GotoXY(30, 0);
+		PlayerHp(try);
+
+		scanf_s("%d", &me);
+		//printf("%d\n", me);
+
+		if (me > randNum || me < randNum)
+		{
+			printf("다시 입력\n");
+		}
+
+		try--;
+
+		if (me > randNum)		// 내가 입력한 값이 randNum보다 클때 == 작을 때 => 체력하나 깎여야함
+		{
+			printf("Down\n");
+		}
+		else if (me < randNum)
+		{
+			printf("Up\n");
+		}
+		else
+		{
+			printf("Victory\n");
+			//printf("정답 : %d\n", randNum);
+			
+		}
+
+		if (try == hp)
+		{
+			printf("Lose\n");
+			printf("정답 : %d\n", randNum);
+
+			break;
+		}
+	}
+
 #pragma endregion
 
-#pragma region 자기 참조 구조체
-	// 자기 자신과 같은 타입의 포인터를 멤버로 포함하고 있는 구조체이다.
+#pragma region 열거형
+	// enum 사용
 
-	//struct Node node1;
-	//struct Node node2;
-	//struct Node node3;
-	//
-	//node1.data = 10;
-	//node2.data = 20;
-	//node3.data = 30;
-	//
-	//node1.next = &node2;
-	//node2.next = &node3;
-	//node3.next = NULL;
-	//
-	//struct Node* currentNode = &node1;	// 중단점 찍어서 확인을 하면 어떻게 들어가는지 쉽게 알 수 있다.
-	//
-	//while (currentNode != NULL)
-	//{
-	//	printf("%d\n", currentNode->data);
-	//	currentNode = currentNode->next;
-	//}
-
-#pragma region typedef
-	/*
-	* 자료형에 별명을 붙이는 키워드로 원하는 이름으로 커스텀해서 사용할 수 있다.
-	* 복잡한 자료형을 간략히 표현하기 위해 사용한다.
-	* 구조체를 선언할 때 typedef를 사용하면 struct를 쓰지않고 선언할 수 있다.
-	* 사용 예시: 
-	* typedef struct 
-	* { 
-	* 
-	* } 커스텀 하고 싶은 구조체 변수;
-	*/
-
-	Player player;	// typedef를 선언해서 사용한 구조체
-	
-	strcpy_s(player.name, sizeof(player.name), "이호준");
-	strcpy_s(player.position, sizeof(player.position), "감독");
-	player.number = 26;
-	
-	printf("이름 : %s\n", player.name);
-	printf("포지션 : %s\n", player.position);
-	printf("등번호 : %d\n", player.number);
-	
-#pragma endregion
-
-	
+	// 열거형 예시
+	printf("")
 #pragma endregion
 
 
